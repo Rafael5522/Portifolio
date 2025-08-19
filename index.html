@@ -3,9 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio Futurista</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfólio Futurista - Rafael</title>
+    <!-- Fonte futurista Orbitron -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos básicos futuristas */
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            background-color: #0f0f1f;
+            color: #00fff0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(90deg, #0f0f1f, #001f3f);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #00fff0;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00fff0;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff00ff;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            border-bottom: 2px solid #00fff0;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #1a1a2e;
+            padding: 20px;
+            border: 1px solid #00fff0;
+            border-radius: 10px;
+            width: 250px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px #00fff0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid #00fff0;
+            background-color: #0f0f1f;
+        }
+
+        a {
+            color: #00fff0;
+        }
+
+        a:hover {
+            color: #ff00ff;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,9 +103,11 @@
 
     <section id="sobre">
         <h2>Sobre Mim</h2>
-        <p id="biografia">Sou Analista de Projetos com sólida experiência em sistemas de segurança eletrônica, gerenciando processos, implementando soluções técnicas e criando propostas personalizadas para clientes residenciais, comerciais e industriais.
-Atualmente cursando Engenharia de Software, com foco em Ciência de Dados e Análise de Informação, meu objetivo é aplicar conhecimento técnico a cenários reais — automatizando fluxos de trabalho, estruturando conjuntos de dados e gerando insights acionáveis.
-Tenho interesse especial em coleta, limpeza, visualização de dados e suporte à tomada de decisões, buscando conectar o conhecimento operacional com a inteligência estratégica por meio da tecnologia.</p>
+        <p id="biografia">
+            Sou Analista de Projetos com sólida experiência em sistemas de segurança eletrônica, gerenciando processos, implementando soluções técnicas e criando propostas personalizadas para clientes residenciais, comerciais e industriais.
+            Atualmente cursando Engenharia de Software, com foco em Ciência de Dados e Análise de Informação. Meu objetivo é aplicar conhecimento técnico a cenários reais — automatizando fluxos de trabalho, estruturando conjuntos de dados e gerando insights acionáveis.
+            Tenho interesse especial em coleta, limpeza, visualização de dados e suporte à tomada de decisões, conectando o conhecimento operacional com a inteligência estratégica por meio da tecnologia.
+        </p>
     </section>
 
     <section id="projetos">
@@ -40,8 +126,8 @@ Tenho interesse especial em coleta, limpeza, visualização de dados e suporte �
 
     <section id="contato">
         <h2>Contato</h2>
-        <p>Email: <a href="mailto:seuemail@exemplo.com">cardosodelimarafael@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/seulinkedin" target="_blank"https://www.linkedin.com/in/rafael-lima-7975a8194/</a></p>
+        <p>Email: <a href="mailto:cardosodelimarafael@gmail.com">cardosodelimarafael@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/rafael-lima-7975a8194/" target="_blank">Meu LinkedIn</a></p>
     </section>
 
     <footer>
