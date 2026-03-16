@@ -1,35 +1,101 @@
-// 1. Efeito Máquina de Escrever no Header
-const typewriterElement = document.getElementById("typewriter");
-const textToType = "Olá, sou Rafael_"; // O underline dá um toque terminal/hacker
-let index = 0;
+// Scroll
 
-function typeWriter() {
-    if (index < textToType.length) {
-        typewriterElement.innerHTML += textToType.charAt(index);
-        index++;
-        setTimeout(typeWriter, 100); // Velocidade da digitação (100ms)
-    }
+function scrollToSection(id){
+
+document.getElementById(id).scrollIntoView({
+behavior:'smooth'
+})
+
 }
 
-// Inicia a digitação quando a página carrega
-window.onload = () => {
-    typeWriter();
-};
 
-// 2. Efeito Scroll Reveal (Revelar ao rolar a página)
-// Seleciona todas as seções que têm a classe 'hidden'
-const hiddenElements = document.querySelectorAll('.hidden');
+// animação reveal
 
-// Cria um observador para ver quando o elemento entra na tela
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        }
-    });
-}, {
-    threshold: 0.1 // O efeito dispara quando 10% do elemento aparece na tela
-});
+const reveals = document.querySelectorAll('.reveal')
 
-// Aplica o observador a cada elemento oculto
-hiddenElements.forEach((el) => observer.observe(el));
+window.addEventListener('scroll',()=>{
+
+reveals.forEach(el=>{
+
+const windowHeight = window.innerHeight
+const top = el.getBoundingClientRect().top
+
+if(top < windowHeight - 100){
+
+el.style.opacity = 1
+el.style.transform = "translateY(0)"
+
+}
+
+})
+
+})
+
+reveals.forEach(el=>{
+
+el.style.opacity = 0
+el.style.transform = "translateY(80px)"
+el.style.transition = "all 1s"
+
+})
+
+
+
+// partículas
+
+const canvas = document.getElementById('particles')
+const ctx = canvas.getContext('2d')
+
+canvas.width = window.innerWidth
+canvas.height = window.innerHeight
+
+let particles = []
+
+for(let i=0;i<100;i++){
+
+particles.push({
+
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+r:Math.random()*2,
+d:Math.random()*1
+
+})
+
+}
+
+function draw(){
+
+ctx.clearRect(0,0,canvas.width,canvas.height)
+
+ctx.fillStyle="#00fff7"
+
+particles.forEach(p=>{
+
+ctx.beginPath()
+ctx.arc(p.x,p.y,p.r,0,Math.PI*2)
+ctx.fill()
+
+})
+
+update()
+
+}
+
+function update(){
+
+particles.forEach(p=>{
+
+p.y+=p.d
+
+if(p.y>canvas.height){
+
+p.y=0
+
+}
+
+})
+
+}
+
+setInterval(draw,33)
