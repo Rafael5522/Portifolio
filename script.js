@@ -3,62 +3,91 @@
 function scrollToSection(id){
 
 document.getElementById(id).scrollIntoView({
-behavior:'smooth'
+behavior:"smooth"
 })
 
 }
 
 
-// animação reveal
 
-const reveals = document.querySelectorAll('.reveal')
+// Typing animation
 
-window.addEventListener('scroll',()=>{
+const text = "Rafael Lima"
+let i = 0
 
-reveals.forEach(el=>{
+function typing(){
 
-const windowHeight = window.innerHeight
-const top = el.getBoundingClientRect().top
+if(i < text.length){
 
-if(top < windowHeight - 100){
+document.getElementById("typing").innerHTML += text.charAt(i)
 
-el.style.opacity = 1
-el.style.transform = "translateY(0)"
+i++
+
+setTimeout(typing,100)
 
 }
 
-})
+}
+
+typing()
+
+
+
+// Counter animation
+
+const counters = document.querySelectorAll('.counter')
+
+counters.forEach(counter => {
+
+const update = () => {
+
+const target = +counter.getAttribute('data-target')
+
+const count = +counter.innerText
+
+const inc = target / 200
+
+if(count < target){
+
+counter.innerText = Math.ceil(count + inc)
+
+setTimeout(update,10)
+
+}
+
+else{
+
+counter.innerText = target
+
+}
+
+}
+
+update()
 
 })
 
-reveals.forEach(el=>{
-
-el.style.opacity = 0
-el.style.transform = "translateY(80px)"
-el.style.transition = "all 1s"
-
-})
 
 
 
-// partículas
+// Background particles
 
-const canvas = document.getElementById('particles')
-const ctx = canvas.getContext('2d')
+const canvas = document.getElementById("bg")
+
+const ctx = canvas.getContext("2d")
 
 canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 
 let particles = []
 
-for(let i=0;i<100;i++){
+for(let i=0;i<120;i++){
 
 particles.push({
 
 x:Math.random()*canvas.width,
 y:Math.random()*canvas.height,
-r:Math.random()*2,
-d:Math.random()*1
+r:Math.random()*2
 
 })
 
@@ -68,25 +97,17 @@ function draw(){
 
 ctx.clearRect(0,0,canvas.width,canvas.height)
 
-ctx.fillStyle="#00fff7"
+ctx.fillStyle="#6366F1"
 
 particles.forEach(p=>{
 
 ctx.beginPath()
+
 ctx.arc(p.x,p.y,p.r,0,Math.PI*2)
+
 ctx.fill()
 
-})
-
-update()
-
-}
-
-function update(){
-
-particles.forEach(p=>{
-
-p.y+=p.d
+p.y+=0.3
 
 if(p.y>canvas.height){
 
