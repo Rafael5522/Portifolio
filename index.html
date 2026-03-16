@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Rafael Lima | Engenharia de Software</title>
+<title>Rafael Lima | Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
-<canvas id="bg"></canvas>
+<canvas id="background"></canvas>
 
-<header>
+<header class="header">
 
-<div class="logo">RAFAEL LIMA</div>
+<div class="logo">
+RAFAEL
+</div>
 
-<nav>
+<nav class="menu">
 
+<a href="#hero">Home</a>
 <a href="#sobre">Sobre</a>
 <a href="#projetos">Projetos</a>
+<a href="#skills">Skills</a>
 <a href="#experiencia">Experiência</a>
 <a href="#contato">Contato</a>
 
@@ -34,7 +34,7 @@
 </header>
 
 
-<section class="hero">
+<section id="hero" class="hero">
 
 <h1 id="typing"></h1>
 
@@ -49,22 +49,23 @@ Ver Projetos
 </section>
 
 
-<section id="sobre">
+
+<section id="sobre" class="section">
 
 <h2>Sobre Mim</h2>
 
 <p>
-Analista de projetos especializado em segurança eletrônica, com experiência em implantação de sistemas, análise técnica e desenvolvimento de soluções personalizadas.
-</p>
 
-<p>
-Atualmente cursando Engenharia de Software, focado em automação de processos, análise de dados e desenvolvimento de ferramentas que conectam o mundo operacional com a tecnologia.
+Analista de projetos com experiência em segurança eletrônica e implantação de sistemas.
+Atualmente cursando Engenharia de Software com foco em automação, análise de dados e desenvolvimento de soluções inteligentes.
+
 </p>
 
 </section>
 
 
-<section id="stats">
+
+<section id="stats" class="stats">
 
 <div class="stat">
 
@@ -76,24 +77,25 @@ Atualmente cursando Engenharia de Software, focado em automação de processos, 
 
 <div class="stat">
 
+<h3 class="counter" data-target="200">0</h3>
+
+<p>Projetos técnicos</p>
+
+</div>
+
+<div class="stat">
+
 <h3 class="counter" data-target="10">0</h3>
 
 <p>Anos de experiência</p>
 
 </div>
 
-<div class="stat">
-
-<h3 class="counter" data-target="50">0</h3>
-
-<p>Projetos técnicos</p>
-
-</div>
-
 </section>
 
 
-<section id="projetos">
+
+<section id="projetos" class="section">
 
 <h2>Projetos</h2>
 
@@ -104,7 +106,7 @@ Atualmente cursando Engenharia de Software, focado em automação de processos, 
 <h3>Automação de Orçamentos</h3>
 
 <p>
-Sistema em Python para envio automático de propostas comerciais.
+Sistema Python que envia propostas automaticamente por email.
 </p>
 
 </div>
@@ -115,7 +117,7 @@ Sistema em Python para envio automático de propostas comerciais.
 <h3>Sistema RMA</h3>
 
 <p>
-Gestão de protocolos técnicos para análise de equipamentos JVA.
+Plataforma para análise técnica e gestão de equipamentos.
 </p>
 
 </div>
@@ -126,7 +128,7 @@ Gestão de protocolos técnicos para análise de equipamentos JVA.
 <h3>Automação AutoCAD</h3>
 
 <p>
-Ferramenta para geração automática de plantas de segurança.
+Geração automática de plantas técnicas para segurança eletrônica.
 </p>
 
 </div>
@@ -134,7 +136,7 @@ Ferramenta para geração automática de plantas de segurança.
 
 <div class="card">
 
-<h3>Controle de Visitas Técnicas</h3>
+<h3>Controle de Visitas</h3>
 
 <p>
 Aplicação para registro de visitas com fotos e relatórios.
@@ -147,7 +149,27 @@ Aplicação para registro de visitas com fotos e relatórios.
 </section>
 
 
-<section id="experiencia">
+
+<section id="skills" class="section">
+
+<h2>Tecnologias</h2>
+
+<div class="skills">
+
+<div class="skill">Python</div>
+<div class="skill">JavaScript</div>
+<div class="skill">SQL</div>
+<div class="skill">AutoCAD</div>
+<div class="skill">Análise de Dados</div>
+<div class="skill">Segurança Eletrônica</div>
+
+</div>
+
+</section>
+
+
+
+<section id="experiencia" class="section">
 
 <h2>Experiência</h2>
 
@@ -157,7 +179,9 @@ Aplicação para registro de visitas com fotos e relatórios.
 
 <h4>Analista de Projetos</h4>
 
-<p>Projetos de segurança eletrônica e automação de processos.</p>
+<p>
+Projetos de segurança eletrônica, análise técnica e automação de processos.
+</p>
 
 </div>
 
@@ -165,7 +189,9 @@ Aplicação para registro de visitas com fotos e relatórios.
 
 <h4>Engenharia de Software</h4>
 
-<p>Foco em automação, análise de dados e desenvolvimento de sistemas.</p>
+<p>
+Desenvolvimento de ferramentas para automação e análise de dados.
+</p>
 
 </div>
 
@@ -174,24 +200,55 @@ Aplicação para registro de visitas com fotos e relatórios.
 </section>
 
 
-<section id="contato">
+
+<section id="contato" class="section">
 
 <h2>Contato</h2>
 
 <p>Email: cardosodelimarafael@gmail.com</p>
 
 <p>
-<a href="https://www.linkedin.com" target="_blank">
-LinkedIn
-</a>
+<a href="https://linkedin.com" target="_blank">LinkedIn</a>
 </p>
 
 </section>
 
 
+
 <footer>
 
-© 2026 Rafael Lima
+<div class="footer-container">
+
+<div>
+
+<h3>Rafael Lima</h3>
+
+<p>
+Engenharia de Software e Automação
+</p>
+
+</div>
+
+<div>
+
+<h4>Links</h4>
+
+<p>Home</p>
+<p>Projetos</p>
+<p>Contato</p>
+
+</div>
+
+<div>
+
+<h4>Contato</h4>
+
+<p>Email</p>
+<p>LinkedIn</p>
+
+</div>
+
+</div>
 
 </footer>
 
