@@ -1,64 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Rafael</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rafael | Portfólio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <div class="bg-grid"></div> <header>
-        <div class="logo">
-            <span id="typewriter"></span><span class="cursor">|</span>
-        </div>
-        <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
 
-    <section id="sobre" class="hidden">
-        <h2>Sobre Mim</h2>
-        <p class="biografia">
-            Sou <strong>Analista de Projetos</strong> com sólida experiência em sistemas de segurança eletrônica, gerenciando processos, implementando soluções técnicas e criando propostas personalizadas para clientes residenciais, comerciais e industriais.
-            <br><br>
-            Atualmente cursando Engenharia de Software, com foco em Ciência de Dados e Análise de Informação. Meu objetivo é aplicar conhecimento técnico a cenários reais — automatizando fluxos de trabalho, estruturando conjuntos de dados e gerando insights acionáveis.
-            Tenho interesse especial em coleta, limpeza, visualização de dados e suporte à tomada de decisões, conectando o conhecimento operacional com a inteligência estratégica por meio da tecnologia.
-        </p>
-    </section>
+<canvas id="particles"></canvas>
 
-    <section id="projetos" class="hidden">
-        <h2>Meus Projetos</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>Projeto Alfa</h3>
-                <p>Automação de fluxos de trabalho utilizando Python e análise de dados em tempo real.</p>
-            </div>
-            <div class="card">
-                <h3>Projeto Beta</h3>
-                <p>Estruturação de banco de dados para sistemas de segurança eletrônica corporativa.</p>
-            </div>
-            <div class="card">
-                <h3>Projeto Gama</h3>
-                <p>Dashboard interativo para visualização de métricas e tomada de decisões.</p>
-            </div>
-        </div>
-    </section>
+<header>
 
-    <section id="contato" class="hidden">
-        <h2>Conexão Estabelecida</h2>
-        <div class="contato-box">
-            <p>Email: <a href="mailto:cardosodelimarafael@gmail.com">cardosodelimarafael@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/rafael-lima-7975a8194/" target="_blank">Acessar Perfil</a></p>
-        </div>
-    </section>
+<div class="logo">RAFAEL</div>
 
-    <footer>
-        <p>© 2025 Rafael Lima - Todos os direitos reservados. Sistema Online.</p>
-    </footer>
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#projetos">Projetos</a>
+<a href="#contato">Contato</a>
+</nav>
 
-    <script src="script.js"></script>
+</header>
+
+
+<section class="hero">
+
+<h1>Engenharia de Software & Automação</h1>
+
+<p>
+Transformando processos técnicos em soluções inteligentes através de tecnologia e dados.
+</p>
+
+<button onclick="scrollToSection('projetos')">
+Ver Projetos
+</button>
+
+</section>
+
+
+<section id="sobre" class="reveal">
+
+<h2>Sobre Mim</h2>
+
+<p>
+Sou Analista de Projetos com experiência em segurança eletrônica e automação de processos.
+Atualmente cursando Engenharia de Software, focado em análise de dados, automação e soluções inteligentes para ambientes operacionais.
+</p>
+
+</section>
+
+
+<section id="projetos" class="reveal">
+
+<h2>Projetos</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Automação de Orçamentos</h3>
+<p>Sistema para geração e envio automático de orçamentos via Excel e Python.</p>
+</div>
+
+<div class="card">
+<h3>Sistema RMA</h3>
+<p>Plataforma para gestão de protocolos técnicos e análise de equipamentos.</p>
+</div>
+
+<div class="card">
+<h3>Automação AutoCAD</h3>
+<p>Geração automática de plantas técnicas para projetos de segurança.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contato" class="reveal">
+
+<h2>Contato</h2>
+
+<p>Email: 
+<a href="mailto:cardosodelimarafael@gmail.com">
+cardosodelimarafael@gmail.com
+</a>
+</p>
+
+<p>
+<a target="_blank" href="https://www.linkedin.com/in/rafael-lima-7975a8194/">
+LinkedIn
+</a>
+</p>
+
+</section>
+
+
+<footer>
+
+© 2026 Rafael
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
