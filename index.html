@@ -2,29 +2,33 @@
 <html lang="pt-BR">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Rafael | Portfólio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+<title>Rafael Lima | Engenharia de Software</title>
 
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<canvas id="particles"></canvas>
+<canvas id="bg"></canvas>
 
 <header>
 
-<div class="logo">RAFAEL</div>
+<div class="logo">RAFAEL LIMA</div>
 
 <nav>
+
 <a href="#sobre">Sobre</a>
 <a href="#projetos">Projetos</a>
+<a href="#experiencia">Experiência</a>
 <a href="#contato">Contato</a>
+
 </nav>
 
 </header>
@@ -32,10 +36,10 @@
 
 <section class="hero">
 
-<h1>Engenharia de Software & Automação</h1>
+<h1 id="typing"></h1>
 
 <p>
-Transformando processos técnicos em soluções inteligentes através de tecnologia e dados.
+Engenharia de Software • Automação • Segurança Eletrônica
 </p>
 
 <button onclick="scrollToSection('projetos')">
@@ -45,37 +49,97 @@ Ver Projetos
 </section>
 
 
-<section id="sobre" class="reveal">
+<section id="sobre">
 
 <h2>Sobre Mim</h2>
 
 <p>
-Sou Analista de Projetos com experiência em segurança eletrônica e automação de processos.
-Atualmente cursando Engenharia de Software, focado em análise de dados, automação e soluções inteligentes para ambientes operacionais.
+Analista de projetos especializado em segurança eletrônica, com experiência em implantação de sistemas, análise técnica e desenvolvimento de soluções personalizadas.
+</p>
+
+<p>
+Atualmente cursando Engenharia de Software, focado em automação de processos, análise de dados e desenvolvimento de ferramentas que conectam o mundo operacional com a tecnologia.
 </p>
 
 </section>
 
 
-<section id="projetos" class="reveal">
+<section id="stats">
+
+<div class="stat">
+
+<h3 class="counter" data-target="3000">0</h3>
+
+<p>Orçamentos analisados</p>
+
+</div>
+
+<div class="stat">
+
+<h3 class="counter" data-target="10">0</h3>
+
+<p>Anos de experiência</p>
+
+</div>
+
+<div class="stat">
+
+<h3 class="counter" data-target="50">0</h3>
+
+<p>Projetos técnicos</p>
+
+</div>
+
+</section>
+
+
+<section id="projetos">
 
 <h2>Projetos</h2>
 
 <div class="cards">
 
 <div class="card">
+
 <h3>Automação de Orçamentos</h3>
-<p>Sistema para geração e envio automático de orçamentos via Excel e Python.</p>
+
+<p>
+Sistema em Python para envio automático de propostas comerciais.
+</p>
+
 </div>
 
+
 <div class="card">
+
 <h3>Sistema RMA</h3>
-<p>Plataforma para gestão de protocolos técnicos e análise de equipamentos.</p>
+
+<p>
+Gestão de protocolos técnicos para análise de equipamentos JVA.
+</p>
+
 </div>
 
+
 <div class="card">
+
 <h3>Automação AutoCAD</h3>
-<p>Geração automática de plantas técnicas para projetos de segurança.</p>
+
+<p>
+Ferramenta para geração automática de plantas de segurança.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Controle de Visitas Técnicas</h3>
+
+<p>
+Aplicação para registro de visitas com fotos e relatórios.
+</p>
+
 </div>
 
 </div>
@@ -83,18 +147,41 @@ Atualmente cursando Engenharia de Software, focado em análise de dados, automa�
 </section>
 
 
-<section id="contato" class="reveal">
+<section id="experiencia">
+
+<h2>Experiência</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h4>Analista de Projetos</h4>
+
+<p>Projetos de segurança eletrônica e automação de processos.</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h4>Engenharia de Software</h4>
+
+<p>Foco em automação, análise de dados e desenvolvimento de sistemas.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contato">
 
 <h2>Contato</h2>
 
-<p>Email: 
-<a href="mailto:cardosodelimarafael@gmail.com">
-cardosodelimarafael@gmail.com
-</a>
-</p>
+<p>Email: cardosodelimarafael@gmail.com</p>
 
 <p>
-<a target="_blank" href="https://www.linkedin.com/in/rafael-lima-7975a8194/">
+<a href="https://www.linkedin.com" target="_blank">
 LinkedIn
 </a>
 </p>
@@ -104,9 +191,10 @@ LinkedIn
 
 <footer>
 
-© 2026 Rafael
+© 2026 Rafael Lima
 
 </footer>
+
 
 <script src="script.js"></script>
 
